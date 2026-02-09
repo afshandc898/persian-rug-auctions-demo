@@ -47,7 +47,7 @@ export default function Footer() {
         <div className="mx-auto max-w-7xl px-6 py-12 lg:px-8">
           <div className="flex flex-col items-center gap-6 md:flex-row md:justify-between">
             <div className="text-center md:text-left">
-              <h3 className="font-[family-name:var(--font-heading)] text-2xl font-semibold text-gold">
+              <h3 className="font-heading text-2xl font-semibold text-gold">
                 Stay Updated
               </h3>
               <p className="mt-1 text-sm text-white/60">
@@ -84,7 +84,7 @@ export default function Footer() {
           {/* Column 1 — Brand */}
           <div className="space-y-6">
             <Link href="/" className="inline-block">
-              <span className="font-[family-name:var(--font-heading)] text-2xl font-bold tracking-wide text-gold">
+              <span className="font-heading text-2xl font-bold tracking-wide text-gold">
                 Persian Rug
                 <br />
                 Auctions
@@ -119,7 +119,7 @@ export default function Footer() {
 
           {/* Column 2 — Quick Links */}
           <div>
-            <h4 className="font-[family-name:var(--font-heading)] text-lg font-semibold text-gold">
+            <h4 className="font-heading text-lg font-semibold text-gold">
               Quick Links
             </h4>
             <ul className="mt-6 space-y-3">
@@ -138,7 +138,7 @@ export default function Footer() {
 
           {/* Column 3 — Customer Service */}
           <div>
-            <h4 className="font-[family-name:var(--font-heading)] text-lg font-semibold text-gold">
+            <h4 className="font-heading text-lg font-semibold text-gold">
               Customer Service
             </h4>
             <ul className="mt-6 space-y-3">
@@ -157,7 +157,7 @@ export default function Footer() {
 
           {/* Column 4 — Contact Us */}
           <div>
-            <h4 className="font-[family-name:var(--font-heading)] text-lg font-semibold text-gold">
+            <h4 className="font-heading text-lg font-semibold text-gold">
               Contact Us
             </h4>
             <ul className="mt-6 space-y-4">
@@ -200,11 +200,24 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="mx-auto max-w-7xl px-6 py-6 lg:px-8">
           <div className="flex flex-col items-center gap-4 md:flex-row md:justify-between">
-            <p className="text-xs text-white/40">
-              &copy; {new Date().getFullYear()} Persian Rug Auctions. All rights
-              reserved. A{" "}
-              <span className="font-medium text-white/60">PCTW Company</span>.
-            </p>
+            <div className="flex flex-col gap-1">
+              <p className="text-xs text-white/40">
+                &copy; {new Date().getFullYear()} Persian Rug Auctions. All rights
+                reserved. A{" "}
+                <span className="font-medium text-white/60">PCTW Company</span>.
+              </p>
+              <p className="text-xs text-white/30">
+                Created by{" "}
+                <a
+                  href="https://crateweb.com.au"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold text-white/50 hover:text-gold transition-colors"
+                >
+                  CrateWeb
+                </a>
+              </p>
+            </div>
 
             <div className="flex items-center gap-4">
               <span className="text-xs text-white/40">We accept</span>

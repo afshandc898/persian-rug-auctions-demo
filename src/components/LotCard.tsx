@@ -34,7 +34,7 @@ export default function LotCard({ lot, view = "grid" }: LotCardProps) {
             <div className="flex items-start justify-between mb-2">
               <div>
                 <Link href={`/lot/${lot.id}`}>
-                  <h3 className="font-[family-name:var(--font-heading)] text-xl text-navy hover:text-gold transition-colors">
+                  <h3 className="font-heading text-xl text-navy hover:text-gold transition-colors">
                     {lot.shortTitle}
                   </h3>
                 </Link>
@@ -52,7 +52,7 @@ export default function LotCard({ lot, view = "grid" }: LotCardProps) {
           <div className="flex items-end justify-between mt-4">
             <div>
               <p className="text-xs text-warm-gray uppercase tracking-wider mb-1">Current Bid</p>
-              <p className="text-2xl font-[family-name:var(--font-heading)] font-bold text-navy">
+              <p className="text-2xl font-heading font-bold text-navy">
                 ${lot.currentBid.toLocaleString()}
               </p>
               <p className="text-xs text-success font-medium mt-0.5">{savingsPercent}% below RRP ${lot.rrp.toLocaleString()}</p>
@@ -60,7 +60,7 @@ export default function LotCard({ lot, view = "grid" }: LotCardProps) {
             <div className="flex items-center gap-4">
               <div className="text-right">
                 <p className="text-xs text-warm-gray mb-1">{lot.numberOfBids} bids</p>
-                <CountdownTimer endTime={lot.endTime} size="sm" />
+                <CountdownTimer endTime={lot.endTime} size="sm" variant="light" />
               </div>
               <Link
                 href={`/lot/${lot.id}`}
@@ -112,7 +112,7 @@ export default function LotCard({ lot, view = "grid" }: LotCardProps) {
       <div className="p-4">
         <div className="mb-3">
           <Link href={`/lot/${lot.id}`}>
-            <h3 className="font-[family-name:var(--font-heading)] text-lg text-navy group-hover:text-gold transition-colors font-semibold leading-tight">
+            <h3 className="font-heading text-lg text-navy group-hover:text-gold transition-colors font-semibold leading-tight">
               {lot.shortTitle}
             </h3>
           </Link>
@@ -122,20 +122,20 @@ export default function LotCard({ lot, view = "grid" }: LotCardProps) {
         <div className="flex items-center justify-between mb-3 pb-3 border-b border-border-light">
           <div>
             <p className="text-[10px] text-warm-gray uppercase tracking-wider font-medium">Current Bid</p>
-            <p className="text-xl font-[family-name:var(--font-heading)] font-bold text-navy">
+            <p className="text-xl font-heading font-bold text-navy">
               ${lot.currentBid.toLocaleString()}
             </p>
           </div>
           <div className="text-right">
             <p className="text-[10px] text-warm-gray uppercase tracking-wider font-medium">Bids</p>
-            <p className="text-lg font-[family-name:var(--font-heading)] font-semibold text-charcoal">
+            <p className="text-lg font-heading font-semibold text-charcoal">
               {lot.numberOfBids}
             </p>
           </div>
         </div>
 
         <div className="flex items-center justify-between">
-          <CountdownTimer endTime={lot.endTime} size="sm" showIcon={false} />
+          <CountdownTimer endTime={lot.endTime} size="sm" showIcon={false} variant="light" />
           <Link
             href={`/lot/${lot.id}`}
             className="bg-gold hover:bg-gold-dark text-white px-4 py-2 rounded-lg font-semibold text-xs transition-all hover:shadow-md flex items-center gap-1.5"

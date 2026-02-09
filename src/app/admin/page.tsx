@@ -310,7 +310,7 @@ export default function AdminDashboard() {
       </button>
 
       {/* Title */}
-      <h1 className="font-[family-name:var(--font-heading)] text-xl sm:text-2xl font-bold text-charcoal">
+      <h1 className="font-heading text-xl sm:text-2xl font-bold text-charcoal">
         {SECTION_TITLES[activeSection]}
       </h1>
 
@@ -358,7 +358,7 @@ export default function AdminDashboard() {
               Live
             </span>
           </div>
-          <h3 className="font-[family-name:var(--font-heading)] text-lg font-bold text-charcoal leading-snug">
+          <h3 className="font-heading text-lg font-bold text-charcoal leading-snug">
             Clearance Auction Feb 2026
           </h3>
           <div className="mt-3 flex items-center gap-2 text-sm text-warm-gray">
@@ -376,7 +376,7 @@ export default function AdminDashboard() {
               <TrendingUp className="w-5 h-5 text-success" />
             </div>
           </div>
-          <h3 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-charcoal">847</h3>
+          <h3 className="font-heading text-3xl font-bold text-charcoal">847</h3>
           <p className="mt-1 text-sm text-success font-medium flex items-center gap-1">
             <ArrowUpRight className="w-3.5 h-3.5" />
             12% from last auction
@@ -391,7 +391,7 @@ export default function AdminDashboard() {
               <Users className="w-5 h-5 text-navy" />
             </div>
           </div>
-          <h3 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-charcoal">234</h3>
+          <h3 className="font-heading text-3xl font-bold text-charcoal">234</h3>
           <p className="mt-1 text-sm text-success font-medium flex items-center gap-1">
             <ArrowUpRight className="w-3.5 h-3.5" />
             8% from last auction
@@ -406,7 +406,7 @@ export default function AdminDashboard() {
               <DollarSign className="w-5 h-5 text-gold-dark" />
             </div>
           </div>
-          <h3 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-charcoal">$48,650</h3>
+          <h3 className="font-heading text-3xl font-bold text-charcoal">$48,650</h3>
           <p className="mt-1 text-xs text-warm-gray">Estimated based on current bids</p>
         </div>
       </div>
@@ -416,7 +416,7 @@ export default function AdminDashboard() {
         {/* Recent Bids */}
         <div className="bg-white rounded-xl border border-border p-5 sm:p-6">
           <div className="flex items-center justify-between mb-5">
-            <h3 className="font-[family-name:var(--font-heading)] text-lg font-bold text-charcoal">Recent Bids</h3>
+            <h3 className="font-heading text-lg font-bold text-charcoal">Recent Bids</h3>
             <button className="text-xs text-gold-dark hover:text-gold font-medium transition-colors">View All</button>
           </div>
           <div className="overflow-x-auto -mx-5 sm:-mx-6 px-5 sm:px-6">
@@ -446,7 +446,7 @@ export default function AdminDashboard() {
         {/* Auction Performance */}
         <div className="bg-white rounded-xl border border-border p-5 sm:p-6">
           <div className="flex items-center justify-between mb-5">
-            <h3 className="font-[family-name:var(--font-heading)] text-lg font-bold text-charcoal">
+            <h3 className="font-heading text-lg font-bold text-charcoal">
               Auction Performance
             </h3>
             <span className="text-xs text-warm-gray">Bid activity by day</span>
@@ -469,7 +469,7 @@ export default function AdminDashboard() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Lots by Status */}
         <div className="bg-white rounded-xl border border-border p-5 sm:p-6">
-          <h3 className="font-[family-name:var(--font-heading)] text-lg font-bold text-charcoal mb-5">
+          <h3 className="font-heading text-lg font-bold text-charcoal mb-5">
             Lots by Status
           </h3>
           <div className="space-y-4">
@@ -505,7 +505,7 @@ export default function AdminDashboard() {
 
         {/* Top Lots */}
         <div className="bg-white rounded-xl border border-border p-5 sm:p-6">
-          <h3 className="font-[family-name:var(--font-heading)] text-lg font-bold text-charcoal mb-5">
+          <h3 className="font-heading text-lg font-bold text-charcoal mb-5">
             Top Lots by Bid Count
           </h3>
           <div className="space-y-4">
@@ -538,7 +538,7 @@ export default function AdminDashboard() {
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
           <div>
             <div className="flex items-center gap-3 mb-1">
-              <h3 className="font-[family-name:var(--font-heading)] text-xl font-bold text-charcoal">
+              <h3 className="font-heading text-xl font-bold text-charcoal">
                 Clearance Auction &mdash; February 2026
               </h3>
               <span className="flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-success/10 text-success text-xs font-semibold">
@@ -587,7 +587,7 @@ export default function AdminDashboard() {
 
       {/* Past Auctions */}
       <div className="bg-white rounded-xl border border-border p-5 sm:p-6">
-        <h3 className="font-[family-name:var(--font-heading)] text-lg font-bold text-charcoal mb-5">Past Auctions</h3>
+        <h3 className="font-heading text-lg font-bold text-charcoal mb-5">Past Auctions</h3>
         <div className="overflow-x-auto -mx-5 sm:-mx-6 px-5 sm:px-6">
           <table className="w-full text-sm min-w-[540px]">
             <thead>
@@ -737,15 +737,15 @@ export default function AdminDashboard() {
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
         <div className="bg-white rounded-xl border border-border p-5 sm:p-6">
           <p className="text-sm text-warm-gray mb-1">Total Registered</p>
-          <h3 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-charcoal">234</h3>
+          <h3 className="font-heading text-3xl font-bold text-charcoal">234</h3>
         </div>
         <div className="bg-white rounded-xl border border-border p-5 sm:p-6">
           <p className="text-sm text-warm-gray mb-1">Active Bidders This Auction</p>
-          <h3 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-charcoal">89</h3>
+          <h3 className="font-heading text-3xl font-bold text-charcoal">89</h3>
         </div>
         <div className="bg-white rounded-xl border border-border p-5 sm:p-6">
           <p className="text-sm text-warm-gray mb-1">New This Week</p>
-          <h3 className="font-[family-name:var(--font-heading)] text-3xl font-bold text-success">12</h3>
+          <h3 className="font-heading text-3xl font-bold text-success">12</h3>
         </div>
       </div>
 
@@ -902,7 +902,7 @@ export default function AdminDashboard() {
     <div className="space-y-6">
       {/* Revenue Chart */}
       <div className="bg-white rounded-xl border border-border p-5 sm:p-6">
-        <h3 className="font-[family-name:var(--font-heading)] text-lg font-bold text-charcoal mb-5">
+        <h3 className="font-heading text-lg font-bold text-charcoal mb-5">
           Monthly Revenue (2025)
         </h3>
         <div className="flex items-end justify-between gap-1.5 sm:gap-2 h-52 px-1">
@@ -925,19 +925,19 @@ export default function AdminDashboard() {
       <div className="grid grid-cols-2 xl:grid-cols-4 gap-4 sm:gap-6">
         <div className="bg-white rounded-xl border border-border p-5">
           <p className="text-xs text-warm-gray mb-1">Average Lot Price</p>
-          <h4 className="font-[family-name:var(--font-heading)] text-2xl font-bold text-charcoal">$1,240</h4>
+          <h4 className="font-heading text-2xl font-bold text-charcoal">$1,240</h4>
         </div>
         <div className="bg-white rounded-xl border border-border p-5">
           <p className="text-xs text-warm-gray mb-1">Avg Bids Per Lot</p>
-          <h4 className="font-[family-name:var(--font-heading)] text-2xl font-bold text-charcoal">8.3</h4>
+          <h4 className="font-heading text-2xl font-bold text-charcoal">8.3</h4>
         </div>
         <div className="bg-white rounded-xl border border-border p-5">
           <p className="text-xs text-warm-gray mb-1">Sell-Through Rate</p>
-          <h4 className="font-[family-name:var(--font-heading)] text-2xl font-bold text-success">94%</h4>
+          <h4 className="font-heading text-2xl font-bold text-success">94%</h4>
         </div>
         <div className="bg-white rounded-xl border border-border p-5">
           <p className="text-xs text-warm-gray mb-1">Repeat Bidder Rate</p>
-          <h4 className="font-[family-name:var(--font-heading)] text-2xl font-bold text-charcoal">62%</h4>
+          <h4 className="font-heading text-2xl font-bold text-charcoal">62%</h4>
         </div>
       </div>
 
@@ -945,7 +945,7 @@ export default function AdminDashboard() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Popular Categories */}
         <div className="bg-white rounded-xl border border-border p-5 sm:p-6">
-          <h3 className="font-[family-name:var(--font-heading)] text-lg font-bold text-charcoal mb-5">
+          <h3 className="font-heading text-lg font-bold text-charcoal mb-5">
             Popular Categories
           </h3>
           <div className="space-y-4">
@@ -968,7 +968,7 @@ export default function AdminDashboard() {
 
         {/* Revenue by Origin */}
         <div className="bg-white rounded-xl border border-border p-5 sm:p-6">
-          <h3 className="font-[family-name:var(--font-heading)] text-lg font-bold text-charcoal mb-5">
+          <h3 className="font-heading text-lg font-bold text-charcoal mb-5">
             Revenue by Origin
           </h3>
           <div className="space-y-4">
@@ -1000,7 +1000,7 @@ export default function AdminDashboard() {
     <div className="space-y-6">
       {/* Auction Defaults */}
       <div className="bg-white rounded-xl border border-border p-5 sm:p-6">
-        <h3 className="font-[family-name:var(--font-heading)] text-lg font-bold text-charcoal mb-5">
+        <h3 className="font-heading text-lg font-bold text-charcoal mb-5">
           Auction Defaults
         </h3>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
@@ -1042,7 +1042,7 @@ export default function AdminDashboard() {
 
       {/* Email Templates */}
       <div className="bg-white rounded-xl border border-border p-5 sm:p-6">
-        <h3 className="font-[family-name:var(--font-heading)] text-lg font-bold text-charcoal mb-5">
+        <h3 className="font-heading text-lg font-bold text-charcoal mb-5">
           Email Templates
         </h3>
         <div className="space-y-2">
@@ -1066,7 +1066,7 @@ export default function AdminDashboard() {
 
       {/* Business Details */}
       <div className="bg-white rounded-xl border border-border p-5 sm:p-6">
-        <h3 className="font-[family-name:var(--font-heading)] text-lg font-bold text-charcoal mb-5">
+        <h3 className="font-heading text-lg font-bold text-charcoal mb-5">
           Business Details
         </h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">

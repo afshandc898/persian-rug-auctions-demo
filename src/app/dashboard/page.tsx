@@ -270,7 +270,7 @@ export default function DashboardPage() {
   const renderActiveBids = () => (
     <div className="space-y-4">
       <div className="flex items-center justify-between">
-        <h2 className="font-[family-name:var(--font-heading)] text-2xl font-semibold text-navy">
+        <h2 className="font-heading text-2xl font-semibold text-navy">
           Active Bids
         </h2>
         <span className="text-sm text-warm-gray">
@@ -310,7 +310,7 @@ export default function DashboardPage() {
                 <div>
                   <div className="flex items-start justify-between gap-3 mb-2">
                     <div>
-                      <h3 className="font-[family-name:var(--font-heading)] text-lg font-semibold text-navy leading-tight">
+                      <h3 className="font-heading text-lg font-semibold text-navy leading-tight">
                         {bid.lot.title}
                       </h3>
                       <p className="text-sm text-warm-gray mt-0.5">
@@ -393,7 +393,7 @@ export default function DashboardPage() {
   const renderWatchlist = () => (
     <div className="space-y-4">
       <div className="flex items-center justify-between">
-        <h2 className="font-[family-name:var(--font-heading)] text-2xl font-semibold text-navy">
+        <h2 className="font-heading text-2xl font-semibold text-navy">
           Watchlist
         </h2>
         <span className="text-sm text-warm-gray">
@@ -404,7 +404,7 @@ export default function DashboardPage() {
       {watchlistLots.length === 0 ? (
         <div className="rounded-xl border border-border-light bg-white p-12 text-center">
           <Heart className="mx-auto h-12 w-12 text-warm-gray/40" />
-          <h3 className="mt-4 font-[family-name:var(--font-heading)] text-lg font-semibold text-navy">
+          <h3 className="mt-4 font-heading text-lg font-semibold text-navy">
             Your watchlist is empty
           </h3>
           <p className="mt-2 text-sm text-warm-gray">
@@ -439,7 +439,7 @@ export default function DashboardPage() {
 
               {/* Content */}
               <div className="p-4">
-                <h3 className="font-[family-name:var(--font-heading)] text-base font-semibold text-navy leading-tight line-clamp-2">
+                <h3 className="font-heading text-base font-semibold text-navy leading-tight line-clamp-2">
                   {lot.title}
                 </h3>
                 <p className="text-sm text-warm-gray mt-1">
@@ -490,7 +490,7 @@ export default function DashboardPage() {
   const renderWonItems = () => (
     <div className="space-y-4">
       <div className="flex items-center justify-between">
-        <h2 className="font-[family-name:var(--font-heading)] text-2xl font-semibold text-navy">
+        <h2 className="font-heading text-2xl font-semibold text-navy">
           Won Items
         </h2>
         <span className="text-sm text-warm-gray">1 item</span>
@@ -509,7 +509,7 @@ export default function DashboardPage() {
 
           {/* Content */}
           <div className="flex-1 p-5 sm:p-6">
-            <h3 className="font-[family-name:var(--font-heading)] text-lg font-semibold text-navy leading-tight">
+            <h3 className="font-heading text-lg font-semibold text-navy leading-tight">
               {wonItem.title}
             </h3>
             <p className="text-sm text-warm-gray mt-1">
@@ -589,7 +589,7 @@ export default function DashboardPage() {
 
   const renderBidHistory = () => (
     <div className="space-y-4">
-      <h2 className="font-[family-name:var(--font-heading)] text-2xl font-semibold text-navy">
+      <h2 className="font-heading text-2xl font-semibold text-navy">
         Bid History
       </h2>
 
@@ -704,7 +704,7 @@ export default function DashboardPage() {
 
   const renderNotifications = () => (
     <div className="space-y-6">
-      <h2 className="font-[family-name:var(--font-heading)] text-2xl font-semibold text-navy">
+      <h2 className="font-heading text-2xl font-semibold text-navy">
         Notification Preferences
       </h2>
 
@@ -712,7 +712,7 @@ export default function DashboardPage() {
       <div className="rounded-xl border border-border-light bg-white p-5 sm:p-6 shadow-sm">
         <div className="flex items-center gap-2 mb-4">
           <Mail className="h-5 w-5 text-gold" />
-          <h3 className="font-[family-name:var(--font-heading)] text-lg font-semibold text-navy">
+          <h3 className="font-heading text-lg font-semibold text-navy">
             Email Notifications
           </h3>
         </div>
@@ -771,7 +771,7 @@ export default function DashboardPage() {
       <div className="rounded-xl border border-border-light bg-white p-5 sm:p-6 shadow-sm">
         <div className="flex items-center gap-2 mb-4">
           <Phone className="h-5 w-5 text-gold" />
-          <h3 className="font-[family-name:var(--font-heading)] text-lg font-semibold text-navy">
+          <h3 className="font-heading text-lg font-semibold text-navy">
             SMS Notifications
           </h3>
         </div>
@@ -823,7 +823,7 @@ export default function DashboardPage() {
       <div className="rounded-xl border border-border-light bg-white p-5 sm:p-6 shadow-sm">
         <div className="flex items-center gap-2 mb-4">
           <Bell className="h-5 w-5 text-gold" />
-          <h3 className="font-[family-name:var(--font-heading)] text-lg font-semibold text-navy">
+          <h3 className="font-heading text-lg font-semibold text-navy">
             Push Notifications
           </h3>
         </div>
@@ -873,13 +873,13 @@ export default function DashboardPage() {
 
   const renderSettings = () => (
     <div className="space-y-6">
-      <h2 className="font-[family-name:var(--font-heading)] text-2xl font-semibold text-navy">
+      <h2 className="font-heading text-2xl font-semibold text-navy">
         Account Settings
       </h2>
 
       {/* Personal Information */}
       <div className="rounded-xl border border-border-light bg-white p-5 sm:p-6 shadow-sm">
-        <h3 className="font-[family-name:var(--font-heading)] text-lg font-semibold text-navy mb-5">
+        <h3 className="font-heading text-lg font-semibold text-navy mb-5">
           Personal Information
         </h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -961,7 +961,7 @@ export default function DashboardPage() {
       <div className="rounded-xl border border-border-light bg-white p-5 sm:p-6 shadow-sm">
         <div className="flex items-center gap-2 mb-5">
           <MapPin className="h-5 w-5 text-gold" />
-          <h3 className="font-[family-name:var(--font-heading)] text-lg font-semibold text-navy">
+          <h3 className="font-heading text-lg font-semibold text-navy">
             Shipping Address
           </h3>
         </div>
@@ -1061,7 +1061,7 @@ export default function DashboardPage() {
 
       {/* Change Password */}
       <div className="rounded-xl border border-border-light bg-white p-5 sm:p-6 shadow-sm">
-        <h3 className="font-[family-name:var(--font-heading)] text-lg font-semibold text-navy mb-5">
+        <h3 className="font-heading text-lg font-semibold text-navy mb-5">
           Change Password
         </h3>
         <div className="max-w-md space-y-4">
@@ -1120,7 +1120,7 @@ export default function DashboardPage() {
 
       {/* Danger Zone */}
       <div className="rounded-xl border border-danger/30 bg-danger/5 p-5 sm:p-6">
-        <h3 className="font-[family-name:var(--font-heading)] text-lg font-semibold text-danger mb-2">
+        <h3 className="font-heading text-lg font-semibold text-danger mb-2">
           Danger Zone
         </h3>
         <p className="text-sm text-warm-gray mb-4">
@@ -1177,7 +1177,7 @@ export default function DashboardPage() {
           <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6">
             {/* Welcome */}
             <div>
-              <h1 className="font-[family-name:var(--font-heading)] text-3xl sm:text-4xl font-bold text-white">
+              <h1 className="font-heading text-3xl sm:text-4xl font-bold text-white">
                 Welcome back,{" "}
                 <span className="text-gold">Sarah</span>
               </h1>

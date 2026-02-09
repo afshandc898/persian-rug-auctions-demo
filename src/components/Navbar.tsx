@@ -214,7 +214,7 @@ export default function Navbar() {
       >
         {/* Panel header */}
         <div className="flex items-center justify-between px-6 py-5 border-b border-burgundy/15">
-          <span className="font-[family-name:var(--font-heading)] text-lg font-semibold text-burgundy tracking-wide">
+          <span className="font-heading text-lg font-semibold text-burgundy tracking-wide">
             Persian Rug Auctions
           </span>
           <button

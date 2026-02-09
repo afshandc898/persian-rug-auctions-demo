@@ -7,9 +7,10 @@ interface CountdownTimerProps {
   endTime: string;
   size?: "sm" | "md" | "lg";
   showIcon?: boolean;
+  variant?: "dark" | "light";
 }
 
-export default function CountdownTimer({ endTime, size = "md", showIcon = true }: CountdownTimerProps) {
+export default function CountdownTimer({ endTime, size = "md", showIcon = true, variant = "dark" }: CountdownTimerProps) {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
   const [isUrgent, setIsUrgent] = useState(false);
 
@@ -50,6 +51,33 @@ export default function CountdownTimer({ endTime, size = "md", showIcon = true }
   };
 
   const s = sizeClasses[size];
+  const isLight = variant === "light";
+
+  const boxColors = isUrgent
+    ? "bg-danger/15 border border-danger/30"
+    : isLight
+      ? "bg-navy/10 border border-navy/20"
+      : "bg-navy/20 border border-white/20";
+
+  const textColor = isUrgent
+    ? "text-danger"
+    : isLight
+      ? "text-navy"
+      : "text-white";
+
+  const labelColor = isUrgent
+    ? "text-danger/60"
+    : isLight
+      ? "text-navy/50"
+      : "text-white/80";
+
+  const colonColor = isUrgent
+    ? "text-danger/40"
+    : isLight
+      ? "text-navy/30"
+      : "text-white/60";
+
+  const boxHeightClass = size === "sm" ? "h-8" : size === "md" ? "h-12" : "h-16";
 
   return (
     <div className={`flex items-center ${s.wrapper}`}>
@@ -65,17 +93,15 @@ export default function CountdownTimer({ endTime, size = "md", showIcon = true }
         ].map((unit, i) => (
           <div key={unit.label} className="flex items-center">
             <div className="flex flex-col items-center">
-              <div className={`${s.box} flex items-center justify-center rounded-md font-semibold font-[family-name:var(--font-heading)] text-white ${
-                isUrgent
-                  ? "bg-danger/20 border border-danger/40"
-                  : "bg-navy/20 border border-white/20"
-              }`}>
+              <div className={`${s.box} flex items-center justify-center rounded-md font-semibold font-heading ${textColor} ${boxColors}`}>
                 {pad(unit.value)}
               </div>
-              <span className={`${s.label} text-white/80 mt-0.5 font-medium tracking-wider`}>{unit.label}</span>
+              <span className={`${s.label} ${labelColor} mt-0.5 font-medium tracking-wider`}>{unit.label}</span>
             </div>
             {i < 3 && (
-              <span className={`mx-0.5 text-white/60 font-bold self-start mt-1.5 ${size === "sm" ? "text-xs" : "text-lg"}`}>:</span>
+              <div className={`flex items-center justify-center ${boxHeightClass} mx-0.5`}>
+                <span className={`${colonColor} font-bold ${size === "sm" ? "text-xs" : "text-lg"}`}>:</span>
+              </div>
             )}
           </div>
         ))}

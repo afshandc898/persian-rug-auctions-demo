@@ -605,7 +605,7 @@ export default function CataloguePage() {
             </nav>
 
             {/* Title */}
-            <h1 className="font-[family-name:var(--font-heading)] text-3xl sm:text-4xl lg:text-5xl text-navy font-semibold mb-3">
+            <h1 className="font-heading text-3xl sm:text-4xl lg:text-5xl text-navy font-semibold mb-3">
               Clearance Auction &mdash; February 2026
             </h1>
 
@@ -618,6 +618,7 @@ export default function CataloguePage() {
             <CountdownTimer
               endTime="2026-02-15T16:00:00+11:00"
               size="lg"
+              variant="light"
             />
           </div>
         </section>
@@ -660,7 +661,7 @@ export default function CataloguePage() {
                       {lot.shortTitle}
                     </p>
                     <div className="flex items-center justify-between mt-1">
-                      <span className="text-navy/90 text-sm font-bold font-[family-name:var(--font-heading)]">
+                      <span className="text-navy/90 text-sm font-bold font-heading">
                         ${lot.currentBid.toLocaleString()}
                       </span>
                       <span className="text-navy/70 text-xs">
@@ -696,7 +697,7 @@ export default function CataloguePage() {
                   <div className="flex items-center justify-between mb-5">
                     <div className="flex items-center gap-2">
                       <SlidersHorizontal className="w-4 h-4 text-gold" />
-                      <span className="text-base font-semibold text-navy font-[family-name:var(--font-heading)]">
+                      <span className="text-base font-semibold text-navy font-heading">
                         Filters
                       </span>
                       {activeFilterCount > 0 && (
@@ -865,7 +866,7 @@ export default function CataloguePage() {
                   <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-ivory-dark flex items-center justify-center">
                     <Search className="w-7 h-7 text-warm-gray" />
                   </div>
-                  <h3 className="font-[family-name:var(--font-heading)] text-xl text-navy mb-2">
+                  <h3 className="font-heading text-xl text-navy mb-2">
                     No lots found
                   </h3>
                   <p className="text-warm-gray text-sm mb-6">
@@ -926,7 +927,7 @@ export default function CataloguePage() {
         <div className="flex items-center justify-between px-5 py-4 border-b border-border">
           <div className="flex items-center gap-2">
             <SlidersHorizontal className="w-4 h-4 text-gold" />
-            <span className="font-[family-name:var(--font-heading)] text-lg font-semibold text-navy">
+            <span className="font-heading text-lg font-semibold text-navy">
               Filters
             </span>
             {activeFilterCount > 0 && (

@@ -90,7 +90,7 @@ export default function Home() {
                 </div>
 
                 {/* Heading */}
-                <h1 className="font-[family-name:var(--font-heading)] text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold text-white leading-[1.1] mb-6">
+                <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold text-white leading-[1.1] mb-6">
                   Exceptional Persian
                   <span className="text-gold">&nbsp;&amp;&nbsp;</span>
                   Afghan Rugs at Auction
@@ -128,7 +128,7 @@ export default function Home() {
                       <p className="text-gold font-semibold text-sm uppercase tracking-wider mb-1">
                         Current Auction
                       </p>
-                      <p className="text-white text-base md:text-lg font-[family-name:var(--font-heading)]">
+                      <p className="text-white text-base md:text-lg font-heading">
                         Clearance Auction — Bidding Ends Sunday Feb 15 @ 4PM AEST
                       </p>
                     </div>
@@ -185,7 +185,7 @@ export default function Home() {
                 <span className="flex items-center justify-center w-8 h-8 rounded-full bg-burgundy/10">
                   <Gavel className="w-4 h-4 text-burgundy" />
                 </span>
-                <h2 className="font-[family-name:var(--font-heading)] text-xl md:text-2xl text-navy font-semibold">
+                <h2 className="font-heading text-xl md:text-2xl text-navy font-semibold">
                   Ending Soon
                 </h2>
               </div>
@@ -214,14 +214,14 @@ export default function Home() {
                     />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <h3 className="font-[family-name:var(--font-heading)] text-sm font-semibold text-navy truncate group-hover:text-gold transition-colors">
+                    <h3 className="font-heading text-sm font-semibold text-navy truncate group-hover:text-gold transition-colors">
                       {lot.shortTitle}
                     </h3>
-                    <p className="text-navy font-bold text-lg font-[family-name:var(--font-heading)] mt-0.5">
+                    <p className="text-navy font-bold text-lg font-heading mt-0.5">
                       ${lot.currentBid.toLocaleString()}
                     </p>
                     <div className="mt-1">
-                      <CountdownTimer endTime={lot.endTime} size="sm" showIcon={true} />
+                      <CountdownTimer endTime={lot.endTime} size="sm" showIcon={true} variant="light" />
                     </div>
                   </div>
                   <div className="flex-shrink-0">
@@ -243,7 +243,7 @@ export default function Home() {
               <span className="text-gold text-sm font-semibold tracking-widest uppercase">
                 Simple Process
               </span>
-              <h2 className="font-[family-name:var(--font-heading)] text-3xl md:text-4xl lg:text-5xl text-navy font-semibold mt-3">
+              <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-navy font-semibold mt-3">
                 How It Works
               </h2>
               <p className="text-warm-gray mt-4 max-w-2xl mx-auto text-base md:text-lg">
@@ -293,7 +293,7 @@ export default function Home() {
                     Step {item.step}
                   </span>
                   {/* Title */}
-                  <h3 className="font-[family-name:var(--font-heading)] text-xl md:text-2xl text-navy font-semibold mb-3">
+                  <h3 className="font-heading text-xl md:text-2xl text-navy font-semibold mb-3">
                     {item.title}
                   </h3>
                   {/* Description */}
@@ -317,7 +317,7 @@ export default function Home() {
                 <span className="text-gold text-sm font-semibold tracking-widest uppercase">
                   Current Auction
                 </span>
-                <h2 className="font-[family-name:var(--font-heading)] text-3xl md:text-4xl lg:text-5xl text-navy font-semibold mt-3">
+                <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-navy font-semibold mt-3">
                   Featured Lots
                 </h2>
               </div>
@@ -361,7 +361,7 @@ export default function Home() {
                 <span className="text-gold text-sm font-semibold tracking-widest uppercase">
                   About Us
                 </span>
-                <h2 className="font-[family-name:var(--font-heading)] text-3xl md:text-4xl lg:text-5xl text-navy font-semibold mt-3 mb-6">
+                <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-navy font-semibold mt-3 mb-6">
                   Melbourne&apos;s Trusted Rug Auction House
                 </h2>
                 <div className="space-y-4 text-warm-gray leading-relaxed">
@@ -428,7 +428,7 @@ export default function Home() {
                 </div>
                 {/* Floating accent card */}
                 <div className="absolute -bottom-6 -left-6 bg-navy text-white rounded-xl p-5 shadow-xl hidden md:block">
-                  <p className="font-[family-name:var(--font-heading)] text-3xl font-bold text-gold">
+                  <p className="font-heading text-3xl font-bold text-gold">
                     15+
                   </p>
                   <p className="text-white/70 text-sm mt-1">
@@ -452,7 +452,7 @@ export default function Home() {
               <span className="text-gold text-sm font-semibold tracking-widest uppercase">
                 The Auction Advantage
               </span>
-              <h2 className="font-[family-name:var(--font-heading)] text-3xl md:text-4xl lg:text-5xl text-navy font-semibold mt-3">
+              <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-navy font-semibold mt-3">
                 Why Buy at Auction
               </h2>
             </div>
@@ -488,7 +488,7 @@ export default function Home() {
                     {card.icon}
                   </div>
                   {/* Title */}
-                  <h3 className="font-[family-name:var(--font-heading)] text-xl md:text-2xl text-navy font-semibold mb-4">
+                  <h3 className="font-heading text-xl md:text-2xl text-navy font-semibold mb-4">
                     {card.title}
                   </h3>
                   {/* Description */}
@@ -511,7 +511,7 @@ export default function Home() {
               <span className="text-gold text-sm font-semibold tracking-widest uppercase">
                 Testimonials
               </span>
-              <h2 className="font-[family-name:var(--font-heading)] text-3xl md:text-4xl lg:text-5xl text-navy font-semibold mt-3">
+              <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-navy font-semibold mt-3">
                 What Our Collectors Say
               </h2>
               <p className="text-warm-gray mt-4 max-w-2xl mx-auto text-base md:text-lg">
@@ -576,7 +576,7 @@ export default function Home() {
           <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="max-w-2xl mx-auto text-center">
               {/* Heading */}
-              <h2 className="font-[family-name:var(--font-heading)] text-3xl md:text-4xl lg:text-5xl text-white font-semibold mb-4">
+              <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-white font-semibold mb-4">
                 Never Miss an Auction
               </h2>
 

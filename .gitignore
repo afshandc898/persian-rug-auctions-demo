@@ -39,3 +39,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Project files (client demo)
+AGENTS.md
+BRAND.md
+CLAUDE.md
+client-proposal.html
+persian-rug-auctions-agent-prompt.md
+PROPOSAL-SUMMARY.md

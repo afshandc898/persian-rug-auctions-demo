@@ -373,7 +373,7 @@ export default function LotDetailClient({ lot }: Props) {
                     <Clock className="w-3.5 h-3.5" />
                     Auction Ends In
                   </p>
-                  <CountdownTimer endTime={lot.endTime} size="lg" />
+                  <CountdownTimer endTime={lot.endTime} size="lg" variant="light" />
                 </div>
 
                 {/* Bid Input */}
