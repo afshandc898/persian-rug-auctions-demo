@@ -47,3 +47,6 @@ CLAUDE.md
 client-proposal.html
 persian-rug-auctions-agent-prompt.md
 PROPOSAL-SUMMARY.md
+
+# Build output (dev)
+/dist/
